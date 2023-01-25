@@ -1,7 +1,6 @@
 import linkedList from './linkedList';
 
 const listData = linkedList();
-
 listData.append(12);
 listData.toString();
 listData.append(122);
@@ -70,3 +69,22 @@ listData.toString();
 
 listData.removeAt(2);
 listData.toString();
+
+
+const listText = linkedList();
+listText.append('node1');
+listText.append('node12');
+listText.append('node13');
+listText.toString();
+listText.prepend('prepend');
+listText.toString();
+
+console.log(listText.size());
+
+listText.at(0);
+listText.at(10);
+
+listText.contains('node1');
+listText.contains('hi');
+
+listText.find('node12');

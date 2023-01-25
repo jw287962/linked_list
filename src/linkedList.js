@@ -74,14 +74,12 @@ const nodeData = node();
           node.nextNode = null;
         }
         node = node.nextNode;
-        
       }
       if (length < 0) length =0;
     }
     const contains = (value) => {
       let node = headNode;
     while (node.value != value){
-        
            node = node.nextNode;
           if(node == null){
             console.log("Does not contain Value", value);
